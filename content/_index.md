@@ -7,4 +7,4 @@ On this site, you'll find:
 * My projects.
 * My articles.
 * My blog posts.
-* MY CV.
+* My CV.
