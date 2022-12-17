@@ -5,8 +5,24 @@ This is a practice project created with [Build Websites with Hubo](https://pragp
 
 Command line
 
-This site was generated with:
+Craete a new site
 
 ```bash
-hugo new site portfolio
+hugo new site <SITE_NAME> 
+```
+
+Create post
+
+```bash
+## Example creating an about page
+hugo new <SINGLE_PAGE_NAME>.md
+```
+
+Create site in the `public` directory
+
+```bash
+hugo --cleanDestinationDir --minify
+
+## --cleanDestinationDir removes previous content in public
+## --minify deletes unnecessary spaces and blank lines. It saves space.
 ```
