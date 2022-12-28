@@ -26,3 +26,6 @@ hugo --cleanDestinationDir --minify
 ## --cleanDestinationDir removes previous content in public
 ## --minify deletes unnecessary spaces and blank lines. It saves space.
 ```
+
+
+NOTE to myself: I need to expand and explore more about the bootstrap theme.
