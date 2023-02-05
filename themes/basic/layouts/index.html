@@ -1,18 +1,13 @@
 {{ define "main" }}
     {{ .Content }}
 
-    <div class="project-container">
+    <h2> Latest project</h2>
 
-        <section class="project-list">
-            <h2> Latest project</h2>
-            <ul>
-                {{ range first 1 (where .Site.RegularPages "Type" "in" "projects").ByDate.Reverse }}
-                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </section>
-
-    </div>
+    <ul>
+        {{ range first 1 (where .Site.RegularPages "Type" "in" "projects").ByDate.Reverse }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
 
 
 {{ end }}
